@@ -1,3 +1,6 @@
 .idea
+.vscode
 .env
 context.md
+kip_files
+.DS_Store

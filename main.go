@@ -155,6 +155,8 @@ func AWSS3ObjectUpload(ctx context.Context, endpoint, accessKey, secretKey, buck
 		}
 	}
 
+	objectName = os.Getenv("MINIO_CRMBE_INTERACTION_PATH") + objectName
+
 	_, errUpload := minioClient.FPutObject(ctx, bucketName, objectName, filePath, minio.PutObjectOptions{})
 	if errUpload != nil {
 		return errors.New("upload failed: " + errUpload.Error())
