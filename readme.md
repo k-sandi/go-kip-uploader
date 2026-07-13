@@ -1,4 +1,4 @@
-# Go KIP Uploader by `kangSands`
+# Go KIP Uploader by `redClaw`
 
 A simple Go script to automate uploading `.txt` files to a MinIO/S3 bucket.
 
